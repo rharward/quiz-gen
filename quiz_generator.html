@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- ... (Your head content) -->
+    <style>
+      body{
+        font-family:  'Arial Narrow Bold', sans-serif;
+        letter-spacing: .1cqmax;
+        background-color: black;
+        color: white;
+        border-radius: 10px;}
+      .center {
+        border-radius: 10px;
+        border: 2px solid;
+        margin: auto;
+        width: 80%;
+        padding: 10px;
+        background-color: black;
+        color: white;
+      }
+      #center {
+        border-radius: 10px;
+        border: 2px solid;
+        margin: auto;
+        width: 80%;
+        padding: 10px;
+        background-color: black;
+        color: white;
+      }
+
+    </style>
+    <script>
+
+      function myFunction1() {
+          // Get the text field
+          var copyText = document.getElementById(outputTextarea).value;
+
+          // Select the text field
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); // For mobile devices
+
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText.value);
+
+          // Alert the copied text
+          alert("Copied the text: " + copyText.value);
+
+      }
+
+
+
+
+    async function generateQuiz() {
+        const header = await fetch('head.txt').then(response => response.text());
+        const mid = await fetch('mid.txt').then(response => response.text());
+        const footer = await fetch('footer.txt').then(response => response.text());
+
+          const input = document.getElementById("quizInput").value.split("\n");
+          let questionHTML = "";
+          let answerKey = {};
+          let contextObj = {};
+          let questionCounter = 1;
+         //  let options = ['F', 'A', 'B', 'C', 'D'];
+
+         let options = ['A', 'B', 'C', 'D'];
+
+          for (let i = 0; i < input.length; i++) {
+              if (input[i].startsWith("Question ")) {
+                  questionHTML += `<div class="question" id="question${questionCounter}">\n`;
+                  questionHTML += `    <p>${input[i].split(": ")[1]}</p>\n`;
+                  questionHTML += `<div id="q${questionCounter}-feedback" class="feedback" color="red"></div>`;
+                  i++;
+
+                  for (let j = 0; j < 5; j++, i++) {
+                      const parts = input[i].split(") ");
+
+                      if (parts.length == 2) {
+                          const answerText = parts[1];
+                          questionHTML += options[j] + `    <input type="radio" name="q${questionCounter}" value="${options[j].toLowerCase()}"> ${answerText}<br>\n`;
+                      }
+                      console.log(parts)
+                      // if (answerText = 2){ questionHTML += `    <input type="radio" name="q${questionCounter}" value="${options[j].toLowerCase()}"> ${answerText}<br>\n`;}
+
+                  }
+
+                  i--;  // Decrement i to offset the extra increment at the end of the for loop
+                  questionHTML += `</div>\n<br>\n`;
+              }
+
+              if (input[i].startsWith("Answer: ")) {
+                  let answer = input[i].split(": ")[1];
+                  answerKey[`q${questionCounter}`] = answer.toLowerCase();
+              }
+
+              if (input[i].startsWith("Context: ")) {
+                  contextObj[`q${questionCounter}`] = input[i].split(": ")[1];
+                  questionCounter++;
+              }
+          }
+
+        const answerKeyStr = "const correctAnswers = " + JSON.stringify(answerKey, null, 4) + ";";
+    const contextObjStr = "const context = " + JSON.stringify(contextObj, null, 4) + ";";
+
+    document.getElementById("outputTextarea").value = questionHTML;
+    document.getElementById("answerKeyTextarea").value = answerKeyStr;
+    document.getElementById("contextTextarea").value = contextObjStr;
+
+    const fullHTML = `${header}\n${questionHTML}\n${mid}\n${answerKeyStr}\n${contextObjStr}\n${footer}`;  // Initialize fullHTML here
+    document.getElementById("fullHTMLArea").value = fullHTML;  // Use fullHTML here
+
+      }
+
+      function copy() {
+var copyText = document.querySelector("#copy");
+copyText.select();
+document.execCommand("copy");
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="sticky">
+      <h1>Quiz Generator</h1>
+      <span></span>
+      <h2>Enter your questions below in the proper format.</h2>
+
+      <textarea
+        id="quizInput"
+        class="center"    
+        rows="20"
+        cols="50"
+        placeholder="Input your quiz questions in the provided format"
+      ></textarea>
+      <p>
+        <button onclick="generateQuiz()">Generate Quiz</button>
+      </p>
+
+      <div >
+        <h3>Generated Quiz HTML:</h3>
+        <textarea
+          id="outputTextarea"
+          class="center"
+          rows="20"
+          cols="50"
+          readonly
+        ></textarea>
+        <button onclick="myFunction1()">Copy text</button>
+        <h3>Generated Answer Key:</h3>
+        <textarea
+          id="answerKeyTextarea"
+          class="center"
+          rows="20"
+          cols="50"
+          readonly
+        ></textarea>
+        <button onclick="myFunction2()">Copy text</button>
+        <h3>Generated Context:</h3>
+        <textarea
+          id="contextTextarea"
+          class="center"
+          rows="20"
+          cols="50"
+          readonly
+        ></textarea>
+        <button onclick="myFunction3()">Copy text</button>
+        <h3>Full HTML Document:</h3>
+        <textarea
+          id="fullHTMLArea"
+          class="center"
+          rows="20"
+          cols="50"
+          readonly
+        ></textarea>
+        <button onclick="myFunction3()">Copy text</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<button onclick="copy()" id="copy">Copy</button>

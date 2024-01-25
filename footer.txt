@@ -1,0 +1,31 @@
+    let score = 0;
+                const totalQuestions = Object.keys(correctAnswers).length;
+
+                for (let q in correctAnswers) {
+                    const feedbackContainer = document.getElementById(`${q}-feedback`);
+
+                    // Clear previous feedback if exists
+                    feedbackContainer.innerHTML = "";
+
+                    if (userAnswers[q] === correctAnswers[q]) {
+                        score++;
+                    } else {
+                        const feedback = document.createElement("p");
+                        feedback.style.color = "red";
+                        feedback.innerText = `The correct answer is ${correctAnswers[q]}. Reason: ${context[q]}`;
+                        feedbackContainer.appendChild(feedback);
+                    }
+                }
+
+                document.getElementById("score").innerText = `Your score is ${score} out of ${totalQuestions}`;
+                document.getElementById("submit").click.disabled = true;
+
+                return score;
+            }
+
+
+
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional for Bootstrap 4 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            border-bottom: 1px solid #ccc;
+            /* Optional: Bottom border for definition */
+        }
+
+        #sticky {
+            position: sticky;
+            top: 0;
+            background-color: #f1f1f1;
+            /* Background color */
+            z-index: 1000;
+            /* z-index to ensure it stays on top of other content */
+            padding: 15px;
+            /* Optional: Padding for aesthetics */
+            border-bottom: 1px solid #ccc;
+            /* Optional: Bottom border for definition */
+            text-align: center;
+            /* background-image: "https://www.flickr.com/photos/38670906@N07/"; */
+            background-color: rgba(6, 80, 49, 0.968);
+            color: white;
+            opacity: 100%;
+        }
+
+        #evaluate {
+
+            position: sticky;
+            top: 0;
+            background-color: #f1f1f1;
+            /* Background color */
+            z-index: 1000;
+            /* z-index to ensure it stays on top of other content */
+            padding: 15px;
+            /* Optional: Padding for aesthetics */
+            border-top: 1px solid #ccc;
+            /* Optional: Bottom border for definition */
+            text-align: center;
+            background-color: rgba(6, 80, 49, 0.968);
+        }
+
+        #quizForm {
+            width: 100%;
+            /* takes up 100% of the width of its parent container */
+            height: 70vh;
+            /* takes up 100% of the viewport height */
+            left: 2%;
+            padding: 2%;
+            overflow: auto;
+            /* will display scrollbar only when necessary */
+            background-color: black;
+            color: white;
+
+        }
+
+        #score {
+            color: white;
+        }
+
+        /* p {
+    color: red;
+  } */
+    </style>
+</head>
+
+<body>
+    <div id="sticky">
+        <h1>In-Class Friday October 27</h1>
+        <span></span>
+        <!-- <h2>A REFRESHER</h2> -->
+    </div>
+
+
+    <form id="quizForm">
+<div class="question" id="question1">
+    <p>What is a key factor in ensuring a good user experience on a website?</p>
+<div id="q1-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q1" value="a"> Quick loading times<br>
+B    <input type="radio" name="q1" value="b"> Adapting to different screen sizes<br>
+C    <input type="radio" name="q1" value="c"> Implementing animations<br>
+D    <input type="radio" name="q1" value="d"> Search Engine Optimization<br>
+</div>
+<br>
+<div class="question" id="question2">
+    <p>Which HTML5 element is most suitable for embedding a navigation menu?</p>
+<div id="q2-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q2" value="a"> <div><br>
+B    <input type="radio" name="q2" value="b"> <section><br>
+C    <input type="radio" name="q2" value="c"> <nav><br>
+D    <input type="radio" name="q2" value="d"> <menu><br>
+</div>
+<br>
+<div class="question" id="question3">
+    <p>What is the minimum recommended touch target size for buttons on mobile devices?</p>
+<div id="q3-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q3" value="a"> 28x28 pixels<br>
+B    <input type="radio" name="q3" value="b"> 36x36 pixels<br>
+C    <input type="radio" name="q3" value="c"> 44x44 pixels<br>
+D    <input type="radio" name="q3" value="d"> 48x48 pixels<br>
+</div>
+<br>
+<div class="question" id="question4">
+    <p>Which of the following CSS units is most appropriate for responsive design?</p>
+<div id="q4-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q4" value="a"> Pixels<br>
+B    <input type="radio" name="q4" value="b"> Points<br>
+C    <input type="radio" name="q4" value="c"> Percentages<br>
+D    <input type="radio" name="q4" value="d"> Inches<br>
+</div>
+<br>
+<div class="question" id="question5">
+    <p>What does WCAG stand for?</p>
+<div id="q5-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q5" value="a"> Web Compliance Accessibility Guidelines<br>
+B    <input type="radio" name="q5" value="b"> Web Content Accessibility Guidelines<br>
+C    <input type="radio" name="q5" value="c"> Web Control Access Gate<br>
+D    <input type="radio" name="q5" value="d"> Web Content Access Grid<br>
+</div>
+<br>
+<div class="question" id="question6">
+    <p>What is Lazy Loading?</p>
+<div id="q6-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q6" value="a"> Preloading all images<br>
+B    <input type="radio" name="q6" value="b"> Loading images as they are scrolled into view<br>
+C    <input type="radio" name="q6" value="c"> Minimizing CSS and JavaScript<br>
+D    <input type="radio" name="q6" value="d"> Reducing server response times<br>
+</div>
+<br>
+<div class="question" id="question7">
+    <p>Which of the following meta tags is essential for controlling the viewport?</p>
+<div id="q7-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q7" value="a"> <meta name="viewport"><br>
+B    <input type="radio" name="q7" value="b"> <meta name="author"><br>
+C    <input type="radio" name="q7" value="c"> <meta name="description"><br>
+D    <input type="radio" name="q7" value="d"> <meta name="generator"><br>
+</div>
+<br>
+<div class="question" id="question8">
+    <p>What is the primary goal of Mobile SEO?</p>
+<div id="q8-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q8" value="a"> Improve user interface<br>
+B    <input type="radio" name="q8" value="b"> Optimize for desktop search<br>
+C    <input type="radio" name="q8" value="c"> Optimize for mobile search<br>
+D    <input type="radio" name="q8" value="d"> Enhance security<br>
+</div>
+<br>
+<div class="question" id="question9">
+    <p>What is the concept of "Mobile First" design?</p>
+<div id="q9-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q9" value="a"> Design for mobile devices before designing for desktop<br>
+B    <input type="radio" name="q9" value="b"> Design for older mobile devices first<br>
+C    <input type="radio" name="q9" value="c"> First make a mobile app, then a website<br>
+D    <input type="radio" name="q9" value="d"> Optimize images for mobile first<br>
+</div>
+<br>
+<div class="question" id="question10">
+    <p>What does HTTPS stand for?</p>
+<div id="q10-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q10" value="a"> HyperText Terminal Protocol Secure<br>
+B    <input type="radio" name="q10" value="b"> Hyper Transfer Text Protocol Secure<br>
+C    <input type="radio" name="q10" value="c"> HyperText Transfer Protocol Secure<br>
+D    <input type="radio" name="q10" value="d"> High-Level Text Transfer Protocol Secure<br>
+</div>
+<br>
+<div class="question" id="question11">
+    <p>Which of the following is a popular CSS framework for responsive design?</p>
+<div id="q11-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q11" value="a"> Angular<br>
+B    <input type="radio" name="q11" value="b"> jQuery<br>
+C    <input type="radio" name="q11" value="c"> Bootstrap<br>
+D    <input type="radio" name="q11" value="d"> React<br>
+</div>
+<br>
+<div class="question" id="question12">
+    <p>What are Progressive Web Apps (PWAs) primarily known for?</p>
+<div id="q12-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q12" value="a"> Quick Installation<br>
+B    <input type="radio" name="q12" value="b"> Offline Capabilities<br>
+C    <input type="radio" name="q12" value="c"> Heavy use of Flash<br>
+D    <input type="radio" name="q12" value="d"> Use of Server Side Scripting<br>
+</div>
+<br>
+<div class="question" id="question13">
+    <p>What is the best practice for creating forms on mobile web pages?</p>
+<div id="q13-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q13" value="a"> Small input fields to save space<br>
+B    <input type="radio" name="q13" value="b"> Multi-step forms with progress indicators<br>
+C    <input type="radio" name="q13" value="c"> Use of CAPTCHA for every input<br>
+D    <input type="radio" name="q13" value="d"> Auto-completion enabled for all fields<br>
+</div>
+<br>
+<div class="question" id="question14">
+    <p>Which CSS property is used to make text bold?</p>
+<div id="q14-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q14" value="a"> font-weight<br>
+B    <input type="radio" name="q14" value="b"> font-style<br>
+C    <input type="radio" name="q14" value="c"> text-decoration<br>
+D    <input type="radio" name="q14" value="d"> text-transform<br>
+</div>
+<br>
+<div class="question" id="question15">
+    <p>What does the "CSS" acronym stand for?</p>
+<div id="q15-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q15" value="a"> Creative Style Sheets<br>
+B    <input type="radio" name="q15" value="b"> Cascading Style Sheets<br>
+C    <input type="radio" name="q15" value="c"> Computer Style Sheets<br>
+D    <input type="radio" name="q15" value="d"> Colorful Style Sheets<br>
+</div>
+<br>
+<div class="question" id="question16">
+    <p>Which programming language is primarily used for web development on the client-side?</p>
+<div id="q16-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q16" value="a"> Python<br>
+B    <input type="radio" name="q16" value="b"> Java<br>
+C    <input type="radio" name="q16" value="c"> PHP<br>
+D    <input type="radio" name="q16" value="d"> JavaScript<br>
+</div>
+<br>
+<div class="question" id="question17">
+    <p>What is the purpose of the HTML <meta> tag with the "charset" attribute?</p>
+<div id="q17-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q17" value="a"> Specify the character set for the entire document<br>
+B    <input type="radio" name="q17" value="b"> Create a new paragraph<br>
+C    <input type="radio" name="q17" value="c"> Embed external CSS<br>
+D    <input type="radio" name="q17" value="d"> Define a JavaScript function<br>
+</div>
+<br>
+<div class="question" id="question18">
+    <p>Which of the following is not a valid HTML tag?</p>
+<div id="q18-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q18" value="a"> <header><br>
+B    <input type="radio" name="q18" value="b"> <main><br>
+C    <input type="radio" name="q18" value="c"> <article><br>
+D    <input type="radio" name="q18" value="d"> <body><br>
+</div>
+<br>
+<div class="question" id="question19">
+    <p>What is the purpose of the CSS property "margin"?</p>
+<div id="q19-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q19" value="a"> Define the space between an element's border and its content<br>
+B    <input type="radio" name="q19" value="b"> Set the background color of an element<br>
+C    <input type="radio" name="q19" value="c"> Control the font size of text<br>
+D    <input type="radio" name="q19" value="d"> Specify the border color of an element<br>
+</div>
+<br>
+<div class="question" id="question20">
+    <p>Which CSS property is used to change the color of text?</p>
+<div id="q20-feedback" class="feedback" color="red"></div>A    <input type="radio" name="q20" value="a"> font-family<br>
+B    <input type="radio" name="q20" value="b"> text-decoration<br>
+C    <input type="radio" name="q20" value="c"> color<br>
+D    <input type="radio" name="q20" value="d"> line-height<br>
+</div>
+<br>
+
+ </form>
+
+
+    <div>
+        <div id="feedback"></div>
+        <br>
+
+        <br>
+        <div id="evaluate">
+            <!-- <button onclick="evaluateQuiz()">Submit Quiz</button> -->
+            <button type="submit" onclick="evaluateQuiz()" class="btn btn-primary">Submit Answers</button>
+            <div id="score"></div>
+        </div>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                document.querySelector('button').addEventListener('click', function () {
+                    const formData = new FormData(document.querySelector('form'));
+                    const userAnswers = Object.fromEntries(formData);
+                    evaluateQuiz(userAnswers);
+                });
+            });
+
+
+
+
+
+            function evaluateQuiz(userAnswers) {
+const correctAnswers = {
+    "q1": "a",
+    "q2": "c",
+    "q3": "c",
+    "q4": "c",
+    "q5": "b",
+    "q6": "b",
+    "q7": "a",
+    "q8": "c",
+    "q9": "a",
+    "q10": "c",
+    "q11": "c",
+    "q12": "b",
+    "q13": "b",
+    "q14": "a",
+    "q15": "b",
+    "q16": "d",
+    "q17": "a",
+    "q18": "a",
+    "q19": "a",
+    "q20": "c"
+};
+const context = {
+    "q1": "Quick loading times are crucial for a good user experience, as slow-loading websites can frustrate users.",
+    "q2": "The <nav> element is specifically designed for navigation menus.",
+    "q3": "Buttons on mobile devices should have a minimum touch target size of 44x44 pixels for ease of use.",
+    "q4": "Using percentages for CSS units is a common practice in responsive design to adapt to different screen sizes.",
+    "q5": "WCAG stands for Web Content Accessibility Guidelines, which provide standards for web accessibility.",
+    "q6": "Lazy loading involves loading images only when they come into the user's view, improving page performance.",
+    "q7": "The <meta name=\"viewport\"> tag is used to control the viewport settings for responsive web design.",
+    "q8": "Mobile SEO aims to optimize websites for better visibility in mobile search results.",
+    "q9": "\"Mobile First\" design involves prioritizing mobile devices in the design process.",
+    "q10": "HTTPS stands for HyperText Transfer Protocol Secure, providing secure data transmission.",
+    "q11": "Bootstrap is a widely-used CSS framework for responsive web design.",
+    "q12": "PWAs are known for their offline capabilities, allowing users to access content without an internet connection.",
+    "q13": "Multi-step forms with progress indicators enhance the user experience on mobile web pages.",
+    "q14": "The font-weight property is used to control the boldness of text.",
+    "q15": "CSS stands for Cascading Style Sheets, used for styling web content.",
+    "q16": "JavaScript is primarily used for client-side web development.",
+    "q17": "The <meta> tag with the \"charset\" attribute specifies the character set for the entire HTML document.",
+    "q18": "<header>, <main>, <article>, and <body> are all valid HTML tags.",
+    "q19": "The \"margin\" property defines the space between an element's border and its content.",
+    "q20": "The \"color\" property is used to specify the color of text in CSS."
+};
+    let score = 0;
+                const totalQuestions = Object.keys(correctAnswers).length;
+
+                for (let q in correctAnswers) {
+                    const feedbackContainer = document.getElementById(`${q}-feedback`);
+
+                    // Clear previous feedback if exists
+                    feedbackContainer.innerHTML = "";
+
+                    if (userAnswers[q] === correctAnswers[q]) {
+                        score++;
+                    } else {
+                        const feedback = document.createElement("p");
+                        feedback.style.color = "red";
+                        feedback.innerText = `The correct answer is ${correctAnswers[q]}. Reason: ${context[q]}`;
+                        feedbackContainer.appendChild(feedback);
+                    }
+                }
+
+                document.getElementById("score").innerText = `Your score is ${score} out of ${totalQuestions}`;
+                document.getElementById("submit").click.disabled = true;
+
+                return score;
+            }
+
+
+
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+ </form>
+
+
+    <div>
+        <div id="feedback"></div>
+        <br>
+
+        <br>
+        <div id="evaluate">
+            <!-- <button onclick="evaluateQuiz()">Submit Quiz</button> -->
+            <button type="submit" onclick="evaluateQuiz()" class="btn btn-primary">Submit Answers</button>
+            <div id="score"></div>
+        </div>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                document.querySelector('button').addEventListener('click', function () {
+                    const formData = new FormData(document.querySelector('form'));
+                    const userAnswers = Object.fromEntries(formData);
+                    evaluateQuiz(userAnswers);
+                });
+            });
+
+
+
+
+
+            function evaluateQuiz(userAnswers) {

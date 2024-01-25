@@ -1,0 +1,215 @@
+Question 1: Which organization is primarily responsible for waste management in Baltimore?
+A) Department of Public Works
+B) Blue Water Baltimore
+C) Civic Works
+D) Clean Corps
+Answer: A
+Context: The Department of Public Works is the primary agency responsible for waste management in Baltimore.
+
+Question 2: What is the primary material found in litter around Baltimore?
+A) Plastic
+B) Metal
+C) Glass
+D) Paper
+Answer: A
+Context: Plastic is the most commonly found material in litter in Baltimore.
+
+Question 3: What are "Mr. Trash Wheel" and "Professor Trash Wheel"?
+A) Waste Management Trucks
+B) Incinerators
+C) River Cleanup Machines
+D) Titles for sanitation workers
+Answer: C
+Context: Mr. Trash Wheel and Professor Trash Wheel are river cleanup machines installed in Baltimore's waterways.
+
+Question 4: Which of these methods is NOT used for litter reduction in Baltimore?
+A) Street sweeping
+B) River cleanup machines
+C) Community trash cans
+D) Mandatory composting
+Answer: D
+Context: Mandatory composting is not one of the methods currently employed by Baltimore for litter reduction.
+
+Question 5: Which non-profit organization primarily focuses on water quality in Baltimore?
+A) Blue Water Baltimore
+B) Civic Works
+C) Department of Public Works
+D) Clean Corps
+Answer: A
+Context: Blue Water Baltimore focuses primarily on improving water quality in Baltimore's rivers, streams, and Harbor.
+
+Question 6: What year was the Baltimore Clean Harbor Plan initiated?
+A) 2010
+B) 2014
+C) 2018
+D) 2005
+Answer: B
+Context: The Baltimore Clean Harbor Plan was initiated in 2014 with the goal of making the harbor safe for swimming and fishing.
+
+Question 7: What is the primary goal of the Inner Harbor Water Wheel?
+A) Generate electricity
+B) Remove litter from the water
+C) Promote tourism
+D) All of the above
+Answer: B
+Context: The primary goal of the Inner Harbor Water Wheel, also known as Mr. Trash Wheel, is to remove litter from the water.
+
+Question 8: What initiative encourages citizens to adopt a drain to keep it clean?
+A) Adopt-A-Drain
+B) Drain Guardians
+C) Clean Drains, Clean Harbor
+D) Drain Defenders
+Answer: A
+Context: The Adopt-A-Drain program encourages Baltimore citizens to adopt a drain to keep it clean and reduce litter and pollutants entering the harbor.
+
+Question 9: Which of the following organizations focuses on tree planting in Baltimore?
+A) TreeBaltimore
+B) Clean Corps
+C) Civic Works
+D) Blue Water Baltimore
+Answer: A
+Context: TreeBaltimore focuses on increasing the city's tree canopy, which indirectly reduces litter by stabilizing soil and improving water quality.
+
+Question 10: What type of litter is most harmful to Baltimore’s marine ecosystem?
+A) Glass
+B) Plastic
+C) Metal
+D) Paper
+Answer: B
+Context: Plastic is the most harmful type of litter to Baltimore’s marine ecosystem as it does not biodegrade and can be ingested by wildlife.
+
+Question 11: Which Baltimore neighborhood has been particularly active in anti-litter campaigns?
+A) Canton
+B) Fells Point
+C) Hampden
+D) Federal Hill
+Answer: C
+Context: Hampden has been particularly active in anti-litter campaigns, including community clean-up events.
+
+Question 12: How does the city enforce the distribution of community trash cans?
+A) By request only
+B) Based on population density
+C) Proximity to commercial areas
+D) All of the above
+Answer: D
+Context: The city of Baltimore uses a combination of request, population density, and proximity to commercial areas to determine the distribution of community trash cans.
+
+Question 13: What is the primary aim of the “Clean Corps Baltimore” initiative?
+A) Recycle waste materials
+B) Advocate for clean energy
+C) Encourage volunteer cleaning
+D) Reduce industrial pollution
+Answer: C
+Context: The primary aim of “Clean Corps Baltimore” is to encourage volunteer cleaning and foster cleaner neighborhoods.
+
+Question 14: What is a common criticism of Baltimore’s waste incinerators?
+A) Inefficiency
+B) Air Pollution
+C) High Cost
+D) All of the above
+Answer: B
+Context: A common criticism of Baltimore’s waste incinerators is that they contribute to air pollution.
+
+Question 15: What is the main focus of the “Less Waste, Better Baltimore” plan?
+A) Reducing plastic use
+B) Increasing composting
+C) Overall waste reduction
+D) Encouraging recycling
+Answer: C
+Context: The main focus of the “Less Waste, Better Baltimore” plan is to reduce overall waste through a variety of means, including recycling and composting.
+
+Question 16: What does the phrase “zero waste” mean in the context of Baltimore’s future plans?
+A) No landfill usage
+B) Complete recycling
+C) Minimal waste production
+D) All of the above
+Answer: D
+Context: In Baltimore’s future plans, “zero waste” refers to a combination of no landfill usage, complete recycling, and minimal waste production.
+
+Question 17: What is the Baltimore Waterfront Partnership’s role in litter management?
+A) Direct cleanup
+B) Advocacy
+C) Community engagement
+D) All of the above
+Answer: D
+Context: The Baltimore Waterfront Partnership is involved in direct cleanup efforts, advocacy, and community engagement to manage litter.
+
+Question 18: How is the Charm City supposed to reach its "zero waste" goals?
+A) By 2020
+B) By 2025
+C) By 2030
+D) By 2040
+Answer: D
+Context: Baltimore aims to reach its "zero waste" goals by 2040.
+
+Question 19: What is the focus of Baltimore's DPW's Bureau of Solid Waste?
+A) Recycling only
+B) Trash collection only
+C) Street cleaning only
+D) All of the above
+Answer: D
+Context: The Bureau of Solid Waste handles recycling, trash collection, and street cleaning.
+
+Question 20: Which of the following activities is illegal under Baltimore's litter laws?
+A) Leaf burning
+B) Spitting
+C) Unsecured truck loads
+D) All of the above
+Answer: D
+Context: All of the above activities are illegal under Baltimore's litter laws and can lead to fines or penalties.
+
+Question 21: What is the “Care-A-Lot” Program?
+A) An adopt-a-road program
+B) A community garden initiative
+C) An adopt-a-park program
+D) A vacant lot adoption program
+Answer: D
+Context: The “Care-A-Lot” Program is designed to allow citizens to adopt vacant lots and transform them into community spaces.
+
+Question 22: What is the significance of the Masonville Cove Environmental Education Center?
+A) It's a waste management facility
+B) It's a water treatment plant
+C) It's an educational center focusing on environmental stewardship
+D) It's a bird sanctuary
+Answer: C
+Context: The Masonville Cove Environmental Education Center serves as an educational center that focuses on environmental stewardship, including waste management and litter reduction.
+
+Question 23: What is Project Clean Stream?
+A) A government-run waste management program
+B) A community service requirement for Baltimore high school students
+C) An annual volunteer event for waterway and watershed cleanup
+D) A recycling initiative
+Answer: C
+Context: Project Clean Stream is an annual volunteer event that focuses on the cleanup of Baltimore's waterways and watersheds.
+
+Question 24: How many pounds of trash did Mr. Trash Wheel collect in its first five years?
+A) Less than 1 million pounds
+B) Between 1 million and 2 million pounds
+C) Between 2 million and 3 million pounds
+D) Over 3 million pounds
+Answer: D
+Context: Mr. Trash Wheel collected over 3 million pounds of trash from Baltimore's Inner Harbor in its first five years of operation.
+
+Question 25: What type of waste is specifically targeted by Baltimore’s Street Sweeping Program?
+A) Hazardous waste
+B) Yard waste
+C) Industrial waste
+D) All of the above
+Answer: B
+Context: Baltimore’s Street Sweeping Program specifically targets yard waste like leaves and grass clippings.
+
+Question 26: What does "Nip the Tap" aim to address?
+A) Water pollution
+B) Air pollution
+C) Noise pollution
+D) Light pollution
+Answer: A
+Context: "Nip the Tap" is an initiative that aims to address water pollution by reducing the use of plastic water bottles.
+
+Question 27: What type of items are collected by the E-Waste collection program?
+A) Hazardous waste
+B) Organic waste
+C) Electronic waste
+D) All of the above
+Answer: C
+Context: The E-Waste collection program specifically focuses on the collection of electronic waste.
